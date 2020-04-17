@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 0.75rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: "Zilla Slab", serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  margin: 5px 10px;
+  width: 100%;
+  text-align: center;
+  order: 3;
+}
+
+.column.hide-big {
+  margin: 0 !important;
+}
+
+.column.logo a img {
+  width: 100%;
+  background-color: black;
+}
+
+.nav {
+  text-decoration: none;
+  font-family: "Zilla Slab", serif;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.border {
+  border: 2px solid grey;
+}
+
+.hide-big {
+  display: block;
+}
+.hide-small {
+  display: none;
+}
+.shivani-head {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  padding: 5px 0;
+}
+
+.hide-tablet {
+  display: block;
+}
+
+.hide-shivani-head {
+  display: none;
+}
+
+.foot-center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.foot-center ul li {
+  display: inline;
+}
+
+a .fa {
+  font-size: 25px;
+  margin: 5px 3%;
+  border: 2px solid grey;
+  padding: 2px 5px;
+  color: black;
+}
+.foot-center h1 {
+  font-size: 25px;
+}
+.foot-center h2 {
+  font-size: 22px;
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+.clear-content {
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 20px;
+}
+
+hr {
+  margin: 20px 0 !important;
+  width: 100% !important;
+  border-top: 3px solid black !important;
+}
+
+.left-content,
+.right content {
+  float: none;
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.left-content img {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+figure figcaption {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Zilla Slab", serif;
+  margin: 10px auto;
+}
+
+.portfolio figure img {
+  width: 95%;
+  height: 300px;
+}
+
+.portfolio {
+  width: 95%;
+  display: block;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.port-head {
+  font-size: 40px;
+  padding: 20px 0;
+  text-align: center;
+}
+.portfolio figure {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 80rem) {
+  p {
+    font-size: 1.25rem;
+  }
+  ul,
+  li {
+    display: inline;
+  }
+  .column {
+    display: block;
+    order: 1;
+    width: 33%;
+    margin: 0px auto;
+  }
+  .column.logo a img {
+    width: 95%;
+    padding: 30px 0;
+  }
+  .hide-small {
+    display: block;
+  }
+  .hide-big {
+    display: none;
+  }
+  .hide-shivani-head {
+    display: block;
+  }
+  .column.hide-shivani-head {
+    width: 100%;
+  }
+  .nav {
+    padding: 10px 20%;
+    border: 2px solid grey;
+    font-size: 25px;
+  }
+  .border {
+    border: none;
+  }
+  .shivani-head {
+    font-size: 80px;
+    padding: 10px 0;
+  }
+  a .fa {
+    font-size: 50px;
+  }
+  .foot-center h1 {
+    font-size: 35px;
+  }
+  .foot-center h2 {
+    font-size: 32px;
+  }
+  .content h1 {
+    font-size: 45px;
+    padding: 25px 0;
+  }
+  .left-content {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+  .left-content img {
+    width: 85%;
+    height: 300px;
+  }
+  .portfolio {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .port-head {
+    font-size: 70px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .portfolio figure {
+    width: 33%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    font-size: 30px;
+    margin: 10px auto 25px auto;
+  }
+}
+
+@media screen and (max-width: 80rem) and (min-width: 35rem) {
+  p {
+    font-size: 1rem;
+  }
+  .column.logo,
+  .column.hide-shivani-head {
+    width: 100%;
+  }
+  .column {
+    display: block;
+    order: 1;
+    width: 48%;
+    margin: 0px auto;
+  }
+  .column.logo a img {
+    width: 75%;
+  }
+  .column.logo,
+  .column.logo a {
+    background-color: black !important;
+  }
+  .shivani-head {
+    font-size: 60px;
+    padding: 10px 0;
+  }
+  .hide-shivani-head {
+    display: block;
+  }
+  .hide-big {
+    display: block;
+  }
+  .hide-small {
+    display: none;
+  }
+  .hide-tablet {
+    display: none;
+  }
+  .column.border {
+    margin: 10px auto;
+  }
+  .nav {
+    font-size: 23px;
+  }
+  a .fa {
+    font-size: 35px;
+  }
+  .foot-center h1 {
+    font-size: 32px;
+  }
+  .foot-center h2 {
+    font-size: 28px;
+  }
+  .content h1 {
+    font-size: 40px;
+    padding: 20px 0;
+  }
+  .left-content {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+  .left-content img {
+    width: 85%;
+    height: 270px;
+  }
+  .portfolio {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .port-head {
+    font-size: 50px;
+    padding: 20px 0;
+  }
+  .portfolio figure {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  figure figcaption {
+    font-size: 30px;
+    margin: 7px auto 20px auto;
+  }
+}
